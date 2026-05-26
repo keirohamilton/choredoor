@@ -787,24 +787,24 @@
         <div class="form-name-row">
           <div>
             <label style="display:block;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);font-family:'Montserrat',sans-serif;margin-bottom:.5rem">First Name</label>
-            <input type="text" placeholder="John" style="width:100%;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.1);color:#fff;font-family:'Montserrat',sans-serif;font-size:.88rem;padding:.85rem 1rem;outline:none;transition:border-color .2s" onfocus="this.style.borderColor='rgba(255,255,255,.4)'" onblur="this.style.borderColor='rgba(255,255,255,.1)'"/>
+            <input id="cf-first" type="text" placeholder="John" style="width:100%;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.1);color:#fff;font-family:'Montserrat',sans-serif;font-size:.88rem;padding:.85rem 1rem;outline:none;transition:border-color .2s" onfocus="this.style.borderColor='rgba(255,255,255,.4)'" onblur="this.style.borderColor='rgba(255,255,255,.1)'"/>
           </div>
           <div>
             <label style="display:block;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);font-family:'Montserrat',sans-serif;margin-bottom:.5rem">Last Name</label>
-            <input type="text" placeholder="Smith" style="width:100%;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.1);color:#fff;font-family:'Montserrat',sans-serif;font-size:.88rem;padding:.85rem 1rem;outline:none;transition:border-color .2s" onfocus="this.style.borderColor='rgba(255,255,255,.4)'" onblur="this.style.borderColor='rgba(255,255,255,.1)'"/>
+            <input id="cf-last" type="text" placeholder="Smith" style="width:100%;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.1);color:#fff;font-family:'Montserrat',sans-serif;font-size:.88rem;padding:.85rem 1rem;outline:none;transition:border-color .2s" onfocus="this.style.borderColor='rgba(255,255,255,.4)'" onblur="this.style.borderColor='rgba(255,255,255,.1)'"/>
           </div>
         </div>
         <div style="margin-bottom:1rem">
           <label style="display:block;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);font-family:'Montserrat',sans-serif;margin-bottom:.5rem">Email</label>
-          <input type="email" placeholder="you@yourbar.com" style="width:100%;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.1);color:#fff;font-family:'Montserrat',sans-serif;font-size:.88rem;padding:.85rem 1rem;outline:none;transition:border-color .2s" onfocus="this.style.borderColor='rgba(255,255,255,.4)'" onblur="this.style.borderColor='rgba(255,255,255,.1)'"/>
+          <input id="cf-email" type="email" placeholder="you@yourbar.com" style="width:100%;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.1);color:#fff;font-family:'Montserrat',sans-serif;font-size:.88rem;padding:.85rem 1rem;outline:none;transition:border-color .2s" onfocus="this.style.borderColor='rgba(255,255,255,.4)'" onblur="this.style.borderColor='rgba(255,255,255,.1)'"/>
         </div>
         <div style="margin-bottom:1rem">
           <label style="display:block;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);font-family:'Montserrat',sans-serif;margin-bottom:.5rem">Phone</label>
-          <input type="tel" placeholder="(813) 000-0000" style="width:100%;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.1);color:#fff;font-family:'Montserrat',sans-serif;font-size:.88rem;padding:.85rem 1rem;outline:none;transition:border-color .2s" onfocus="this.style.borderColor='rgba(255,255,255,.4)'" onblur="this.style.borderColor='rgba(255,255,255,.1)'"/>
+          <input id="cf-phone" type="tel" placeholder="(813) 000-0000" style="width:100%;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.1);color:#fff;font-family:'Montserrat',sans-serif;font-size:.88rem;padding:.85rem 1rem;outline:none;transition:border-color .2s" onfocus="this.style.borderColor='rgba(255,255,255,.4)'" onblur="this.style.borderColor='rgba(255,255,255,.1)'"/>
         </div>
         <div style="margin-bottom:1rem">
           <label style="display:block;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);font-family:'Montserrat',sans-serif;margin-bottom:.5rem">Service Needed</label>
-          <select style="width:100%;background:#1A1A1A;border:1.5px solid rgba(255,255,255,.1);color:rgba(255,255,255,.6);font-family:'Montserrat',sans-serif;font-size:.88rem;padding:.85rem 1rem;outline:none">
+          <select id="cf-service" style="width:100%;background:#1A1A1A;border:1.5px solid rgba(255,255,255,.1);color:rgba(255,255,255,.6);font-family:'Montserrat',sans-serif;font-size:.88rem;padding:.85rem 1rem;outline:none">
             <option value="">Select a service…</option>
             <option>New License Application</option>
             <option>License Transfer</option>
@@ -818,9 +818,13 @@
         </div>
         <div style="margin-bottom:2rem">
           <label style="display:block;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);font-family:'Montserrat',sans-serif;margin-bottom:.5rem">Tell us about your situation</label>
-          <textarea rows="4" placeholder="Brief description of your business and what you're looking to accomplish…" style="width:100%;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.1);color:#fff;font-family:'Montserrat',sans-serif;font-size:.88rem;padding:.85rem 1rem;outline:none;resize:none;transition:border-color .2s" onfocus="this.style.borderColor='rgba(255,255,255,.4)'" onblur="this.style.borderColor='rgba(255,255,255,.1)'"></textarea>
+          <textarea id="cf-situation" rows="4" placeholder="Brief description of your business and what you're looking to accomplish…" style="width:100%;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.1);color:#fff;font-family:'Montserrat',sans-serif;font-size:.88rem;padding:.85rem 1rem;outline:none;resize:none;transition:border-color .2s" onfocus="this.style.borderColor='rgba(255,255,255,.4)'" onblur="this.style.borderColor='rgba(255,255,255,.1)'"></textarea>
         </div>
-        <button onclick="alert('Thank you! We\'ll be in touch within 24 hours.')" style="width:100%;background:#fff;color:#0A0A0A;font-family:'Montserrat',sans-serif;font-weight:700;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;padding:1.1rem;border:none;cursor:pointer;transition:background .2s" onmouseover="this.style.background='#E8E8E8'" onmouseout="this.style.background='#fff'">Submit · Free Consultation</button>
+
+        <!-- Status message -->
+        <div id="cf-status" style="display:none;text-align:center;font-family:'Montserrat',sans-serif;font-size:.78rem;letter-spacing:.08em;padding:.9rem;margin-bottom:1rem;border:1.5px solid"></div>
+
+        <button id="cf-submit" onclick="submitConsultationForm()" style="width:100%;background:#fff;color:#0A0A0A;font-family:'Montserrat',sans-serif;font-weight:700;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;padding:1.1rem;border:none;cursor:pointer;transition:background .2s,opacity .2s" onmouseover="if(!this.disabled)this.style.background='#E8E8E8'" onmouseout="if(!this.disabled)this.style.background='#fff'">Submit · Free Consultation</button>
         <p style="text-align:center;font-size:.68rem;color:rgba(255,255,255,.2);margin-top:1rem;letter-spacing:.06em">We respond within 24 hours · No spam · No obligation</p>
       </div>
     </div>
@@ -949,6 +953,78 @@ function updateParallax() {
 window.addEventListener('scroll', updateParallax, { passive: true });
 window.addEventListener('resize', updateParallax, { passive: true });
 updateParallax();
+
+/* ── Consultation Form Submission ── */
+// !! REPLACE THIS URL with your deployed Google Apps Script Web App URL !!
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzIilo-sWTzEu8yaaHcIBuTIitpMy08ObhR-Rv6TUin282L_CCD_BlTolvyuwmS2Lc/exec';
+
+async function submitConsultationForm() {
+  const btn    = document.getElementById('cf-submit');
+  const status = document.getElementById('cf-status');
+
+  const first     = document.getElementById('cf-first').value.trim();
+  const last      = document.getElementById('cf-last').value.trim();
+  const email     = document.getElementById('cf-email').value.trim();
+  const phone     = document.getElementById('cf-phone').value.trim();
+  const service   = document.getElementById('cf-service').value;
+  const situation = document.getElementById('cf-situation').value.trim();
+
+  // Basic validation
+  if (!first || !last || !email || !service) {
+    showStatus('Please fill in all required fields (First Name, Last Name, Email, Service).', false);
+    return;
+  }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    showStatus('Please enter a valid email address.', false);
+    return;
+  }
+
+  // Loading state
+  btn.disabled = true;
+  btn.textContent = 'Sending…';
+  btn.style.opacity = '0.6';
+  btn.style.cursor = 'not-allowed';
+  status.style.display = 'none';
+
+  try {
+    const payload = { first, last, email, phone, service, situation };
+
+    await fetch(APPS_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors', // required for Apps Script
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+
+    // no-cors means we can't read the response — assume success if no error thrown
+    showStatus('Thank you! We\'ll be in touch within 24 hours.', true);
+    clearForm();
+
+  } catch (err) {
+    showStatus('Something went wrong. Please try again or email us directly.', false);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Submit · Free Consultation';
+    btn.style.opacity = '1';
+    btn.style.cursor = 'pointer';
+  }
+}
+
+function showStatus(msg, success) {
+  const status = document.getElementById('cf-status');
+  status.textContent = msg;
+  status.style.display = 'block';
+  status.style.color      = success ? 'rgba(100,220,130,.9)' : 'rgba(255,100,100,.9)';
+  status.style.borderColor = success ? 'rgba(100,220,130,.3)' : 'rgba(255,100,100,.3)';
+  status.style.background  = success ? 'rgba(100,220,130,.06)' : 'rgba(255,100,100,.06)';
+}
+
+function clearForm() {
+  ['cf-first','cf-last','cf-email','cf-phone','cf-situation'].forEach(id => {
+    document.getElementById(id).value = '';
+  });
+  document.getElementById('cf-service').selectedIndex = 0;
+}
 </script>
 
 </body>
