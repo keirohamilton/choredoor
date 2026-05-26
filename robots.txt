@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Point Google to the sitemap
+Sitemap: https://mytrainingsourceconsulting.com/sitemap.xml
+
+# Block irrelevant crawling
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /*.json$
